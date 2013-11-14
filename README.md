@@ -41,7 +41,8 @@ For a heroku app, run `heroku config:set MY_SECRET=abc123`
 
 ### With secret data stored in a file on disk
 
-    $ echo "abc123" >> ~/.ssh/my-secret.key
+Store your keys in ~/.pairity/ named lowercase and dasherized, e.g.
+`echo "abc123" >> ~/.pairity/my-secret.key`
 
 
     Pairity.with_key_paths 'MY_SECRET' do |key_path|
